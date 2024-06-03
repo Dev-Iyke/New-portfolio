@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&family=Ubuntu&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******* HERO SECTION ******/
+.hero{
+  background-color: rgb(184, 252, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.cld-one{
+  right: 9rem;
+  top: 2.5rem;
+  position: absolute;
+}
+.cld-two{
+  left: 9rem;
+  bottom: 11.5rem;
+  position: absolute;
+}
+.cld-one img, .cld-two img{
+  width: 100px;
+}
+.info{
+  margin-top: 6rem;
+  color: #64b6a9;
+}
+.info h1{
+  font-family: "Sacramento", cursive;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 3rem;
+}
+.info p{
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+.info span{
+  text-decoration: underline;
+}
+
+.mountain{
+  margin-top: 4rem;
+}
+.mountain img{
+  width: 350px;
+  display: block;
+}
+
+/****** DETAILS SECTION *******/
+.details{
+  background-color: white;
+  width: 55%;
+  margin: 0 auto;
+}
+.details img{
+  width: 200px;
+}
