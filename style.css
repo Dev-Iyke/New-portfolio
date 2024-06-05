@@ -5,7 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: white;
+}
 /******* HERO SECTION ******/
 .hero{
   background-color: rgb(184, 252, 252);
@@ -58,10 +61,135 @@
 
 /****** DETAILS SECTION *******/
 .details{
-  background-color: white;
-  width: 55%;
+  width:55%;
   margin: 0 auto;
+  color: #64b6a9;
+  padding-top: 5rem;
 }
 .details img{
-  width: 200px;
+  width: 150px;
+  display: block;
+}
+.hello, .skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hello p:nth-of-type(1){
+  font-size: 1.2rem;
+  padding: .4rem 0 .8rem;
+}
+.hello p:nth-of-type(2){
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #575757;
+}
+.dots{
+  color: #333;
+  text-align: center;
+}
+.skills h2{
+  margin: 2.5rem 0;
+  font-weight: 400;
+}
+.skills>div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-top: 7px solid #333;
+  padding-top: .35rem;
+}
+.skills .sk-desc{
+  align-self: self-start;
+  padding: .6rem 0;
+}
+.skills .sk-desc p{
+  color: #575757;
+  margin-top: 1rem;
+}
+.skills .sk-desc .teach{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/******* PORTFOLIO *******/
+.portfolio{
+  background-color: #eeeeee;
+  padding-top: 3rem;
+}
+.portfolio img{
+  width: 100%;
+  height: 100%;
+}
+.album{
+  margin: 0 auto;
+  width: 25%;
+}
+.album h2{
+  font-size: 1.8rem;
+  color: #106123;
+}
+.album .line{
+  width: 100%;
+  height: 4px;
+  background-color: #24bdd5;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-content: center;
+  gap: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.gallery div{
+  width: 300px;
+  height: 300px;
+}
+.gallery img:hover{
+ animation: zoom-in .7s .2s ;
+  animation-iteration-count: inherit;
+}
+@keyframes zoom-in {
+  from {transform: scale(.95);}
+  to {transform: scale(1.1);}
+}
+
+
+/******* GET IN TOUCH SECTION *******/
+.git{
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+.git h2{
+  color: #64b6a9;
+  margin: 2.5rem 0 1rem;
+  font-weight: 400;
+}
+.git p{
+  color: #37655e;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+/******* FOOTER SECTION *******/
+.footer{
+  background-color: #4e979f;
+}
+
+.links ul{
+  display: flex;
+  gap: 5rem;
+ 
+}
+.links ul li{
+  list-style-type: none;
+}
+.links ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
 }
